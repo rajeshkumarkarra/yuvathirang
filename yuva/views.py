@@ -4,3 +4,6 @@ from django.http import HttpResponse
 # Create your views here.
 def index(request):
 	return render(request, 'yuva/index.html')
+
+def single(request):
+	return render(request, 'yuva/single.html')
