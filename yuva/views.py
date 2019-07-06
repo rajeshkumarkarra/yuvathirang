@@ -7,3 +7,14 @@ def index(request):
 
 def single(request):
 	return render(request, 'yuva/single.html')
+
+def contactform(request):
+	print("hello")
+	fstname = request.POST['yourname']
+	lstname = request.POST['lname']
+	myemail = request.POST['myemail']
+	mymessage = request.POST['mymessage']
+	c= Client(fname=fstname,lname=lstname,email=myemail,message=mymessage)
+	c.save()
+ 
+	return render(request,'yuva/index.html')

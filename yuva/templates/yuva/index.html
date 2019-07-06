@@ -1,4 +1,4 @@
-{% load static %}
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -73,31 +73,31 @@
     </header>
     
     <div class="owl-carousel slide-one-item">
-      <a href="#"><img src="{% static "yuva/asset/images/hero_1.jpg" %}" alt="Image" class="img-fluid"></a>
-      <a href="#"><img src="{% static "yuva/asset/images/hero_2.jpg" %}" alt="Image" class="img-fluid"></a>
+      <a href="#"><img src="{% static 'yuva/asset/images/hero_1.jpg' %}" alt="Image" class="img-fluid"></a>
+      <a href="#"><img src="{% static 'yuva/asset/images/hero_2.jpg' %}" alt="Image" class="img-fluid"></a>
     </div>
     
     <div class="d-block d-md-flex intro-engage">
       <div class="">
-        <h2>Rescue An Orphan</h2>
-        <p>Accusantium dignissimos voluptas rem consequatur blanditiis error ratione illo sit quasi ut praesentium magnam</p>
+        <h2>WOMEN DEVELOPMENT</h2>
+        <p>Yuva Thirang is tied up with local shelter homes for women, aged and young, providing services in accordance to their most required amenities and motivating them towards their personal independence by cordial support from women pathfinders committed to empowering women as such from across India.</p>
       </div>
       <div>
-        <h2>Feed The Hungry</h2>
-        <p>Accusantium dignissimos voluptas rem consequatur blanditiis error ratione illo sit quasi ut praesentium magnam</p>
+        <h2>NATIONALISM</h2>
+        <p>As firm believers that, a true nationalist is one who holds one's country's best interests at heart and one who contributes in one's little ways every other day, our project on nationalism is inclined in regard that, we work on spreading across the message of true essence of nationalism - among the young and the vulnerable age groups especially</p>
       </div>
       <div>
-        <h2>Free Education</h2>
-        <p>Accusantium dignissimos voluptas rem consequatur blanditiis error ratione illo sit quasi ut praesentium magnam</p>
+        <h2>HUMAN DEVELOPMENT</h2>
+        <p>Denying the generalized notion about economics alone holding power to change a nation's fate, Human Development places an emphasis on personal development of individuals through constructive changes on their personal front, towards finding the freedom of voice for an equity in one's rights.</p>
       </div>
     </div>
 
-    <div class="site-section bg-image overlay counter" style="background-image: url('images/hero_1_no-text.jpg');" id="about-section">
+    <div class="site-section bg-image overlay counter" style="background-image: url('{% static 'yuva/asset/images/hero_1_no-text.jpg'%}');" id="about-section">
       <div class="container">
         <div class="row mb-5">
           <div class="col-lg-6 mb-4">
-            <figure class="block-img-video-1" data-aos="fade">
-              <a href="https://vimeo.com/45830194" class="popup-vimeo">
+            <figure class="{% static 'yuva/asset/block-img-video-1' %}" data-aos="fade">
+              <a href="{% static 'yuva/asset/https://vimeo.com/45830194' %}" class="popup-vimeo">
                 <span class="icon"><span class="icon-play"></span></span>
                 <img src="{% static 'yuva/asset/images/hero_1_no-text.jpg' %}" alt="Image" class="img-fluid">
               </a>
@@ -105,7 +105,7 @@
           </div>
           <div class="col-lg-5 ml-auto align-self-lg-center">
             <h2 class="text-black mb-4 text-uppercase section-title">Our Mission</h2>
-            <p class="text-black">Accusantium dignissimos voluptas rem consequatur blanditiis error ratione illo sit quasi ut, praesentium magnam, pariatur quae, necessitatibus</p>
+            <p class="text-black">To promote the ideology of effective ways in terms of providence for Human Development, Child Education, Women Development, and Nationalism.</p>
             <p class="text-black">Dolor, eligendi voluptate ducimus itaque esse autem perspiciatis sint! Recusandae dolor aliquid inventore sit,</p>
           </div>
         </div>
@@ -143,8 +143,8 @@
         <div class="row mb-5 justify-content-center">
           <div class="col-md-7 text-center">
             <div class="block-heading-1">
-              <h2 class="text-black text-uppercase">Discover</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto aperiam unde natus voluptates placeat accusamus vel laborum cupiditate. Reiciendis commodi perferendis dignissimos, amet quis.</p>
+              <h2 class="text-black text-uppercase">Programs</h2>
+              <p>It is undisputable that India possesses the most promising demographic trends. India has the largest population in the world – with some of the best projects on a global scale being led by Indian youth. And as said by Dr. Kalam Himself that “ This resource of the youth is an important building block for transforming India into a developed nation”. This program is established on the ideas & vision of Dr. Kalam.The primary aim is to create Young Leaders for Taking Forward the Visions and Missions of Dr. A.P.J. Abdul Kalam for a Developed India and Inclusive Society Therefore reverenced, Yuva Thirang and Dr. A.P.J. Abdul Kalam Center bring forward to you "KALAM BHARAT" 2019 School Adoption program for 500 schools in and around HYDERABAD & RANGAREDDY.</p>
             </div>
           </div>
         </div>
@@ -182,7 +182,7 @@
         <div class="row mb-5">
 
           <div class="col-lg-6 mb-5 order-lg-2">
-            <img src="{% static "yuva/asset/images/hero_2_no-text.jpg" %}" alt="Image" class="img-fluid">
+            <img src="{% static 'yuva/asset/images/hero_2_no-text.jpg' %}" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-5 mr-auto align-self-center order-lg-1">
             <h3 class="text-black text-uppercase mb-4">Feeding Children in Africa</h3>
@@ -208,7 +208,7 @@
     </div>
   </div>
 
-    <div class="site-section bg-image overlay" style="background-image: url('images/hero_1_no-text.jpg);" id="donate-section">
+    <div class="site-section bg-image overlay" style="background-image: url('{% static 'yuva/asset/images/hero_1_no-text.jpg' %}');" id="donate-section">
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-lg-5 text-center">
@@ -274,7 +274,7 @@
           <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up">
             <div class="block-team-member-1 text-center rounded">
               <figure>
-                <img src="{% static 'images/person_1.jpg' %}" alt="Image" class="img-fluid rounded-circle">
+                <img src="{% static 'yuva/asset/images/person_1.jpg' %}" alt="Image" class="img-fluid rounded-circle">
               </figure>
               <h3 class="font-size-20 text-white">Jean Smith</h3>
               <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">Mining Expert</span>
@@ -324,7 +324,7 @@
 
     
     
-    <div class="site-section block-13 overlay bg-image" id="testimonials-section" data-aos="fade" style="background-image: url('images/hero_1_no-text.jpg');">
+    <div class="site-section block-13 overlay bg-image" id="testimonials-section" data-aos="fade" style="background-image: url('{% static 'yuva/asset/images/hero_1_no-text.jpg' %}');">
       <div class="container">
         
         <div class="text-center mb-5">
@@ -436,25 +436,26 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-lg-6 mb-5">
-            <form action="#" method="post">
+            <form name = "myform" action="/contactform/" method="post" id ="contact">
+            	{% csrf_token %}
               <div class="form-group row">
                 <div class="col-md-6 mb-4 mb-lg-0">
-                  <input type="text" class="form-control" placeholder="First name">
+                  <input type="text" class="form-control" placeholder="First name" id = "fname" name="yourname">
                 </div>
                 <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="First name">
+                  <input type="text" class="form-control" placeholder="Last name" id ="lname" name ="lstname">
                 </div>
               </div>
 
               <div class="form-group row">
                 <div class="col-md-12">
-                  <input type="text" class="form-control" placeholder="Email address">
+                  <input type="text" class="form-control" placeholder="Email address" id ="email" name = myemail>
                 </div>
               </div>
 
               <div class="form-group row">
                 <div class="col-md-12">
-                  <textarea name="" id="" class="form-control" placeholder="Write your message." cols="30" rows="10"></textarea>
+                  <textarea name="" id="" class="form-control" placeholder="Write your message." id= "message" name=mymessage cols="30" rows="10"></textarea>
                 </div>
               </div>
               <div class="form-group row">
@@ -535,18 +536,18 @@
 
   </div>
 
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/jquery.sticky.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/aos.js"></script>
+  <script src="{% static 'yuva/asset/js/jquery-3.3.1.min.js' %}"></script>
+  <script src="{% static 'yuva/asset/js/jquery-ui.js' %}"></script>
+  <script src="{% static 'yuva/asset/js/popper.min.js' %}"></script>
+  <script src="{% static 'yuva/asset/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'yuva/asset/js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'yuva/asset/js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'yuva/asset/js/jquery.sticky.js' %}"></script>
+  <script src="{% static 'yuva/asset/js/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'yuva/asset/js/jquery.animateNumber.min.js' %}"></script>
+  <script src="{% static 'yuva/asset/js/aos.js'%}"></script>
 
-  <script src="js/main.js"></script>
+  <script src="{% static  'yuva/asset/js/main.js' %}"></script>
     
   </body>
   {% endblock %}
