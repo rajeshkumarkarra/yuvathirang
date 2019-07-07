@@ -7,5 +7,5 @@ urlpatterns = [
     #path('admin/', admin.site.urls),
     path('',views.index, name = 'index'),
     path('single/', views.single, name = 'Blog'),
-    path('contactform/',views.contactform,name='contactform'),
+    #path('contactform/',views.contactform,name='contactform'),
 ]

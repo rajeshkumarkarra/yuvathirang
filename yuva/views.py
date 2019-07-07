@@ -8,7 +8,7 @@ def index(request):
 def single(request):
 	return render(request, 'yuva/single.html')
 
-def contactform(request):
+'''def contactform(request):
 	print("hello")
 	fstname = request.POST['yourname']
 	lstname = request.POST['lname']
@@ -18,3 +18,4 @@ def contactform(request):
 	c.save()
  
 	return render(request,'yuva/index.html')
+	'''
