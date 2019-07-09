@@ -46,7 +46,7 @@
       <div class="container">
         <div class="row align-items-center position-relative">
             <div class="site-logo">
-              <img src="{% static 'yuva/asset/images/logo.png' %}" width="300" height="150" class="d-inline-block align-left" alt="">
+              <img src="{% static 'yuva/asset/images/logo.png' %}" width="250" height="130" class="d-inline-block align-left" alt="">
               
 
      
@@ -850,22 +850,26 @@ Yuvathirang has been a life changing experience to me. The journey was an epipha
             </div>
           </div>
           <div class="col-md-4 ml-auto">
-
+          
             <div class="mb-5">
               <div class="mb-5">
-                <h2 class="footer-heading mb-4">Some Paragraph</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat nostrum libero iusto dolorum vero atque aliquid.</p>
+                <h2 class="footer-heading mb-4"></h2>
+                <p></p>
               </div>
               <h2 class="footer-heading mb-4">Subscribe to Newsletter</h2>
               <form action="#" method="post">
                 <div class="input-group mb-3">
-                  <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
+                  <form name="myform1" action="/emailSubscribe/" method="post"  id="index" novalidate>
+                    {% csrf_token %}
+                  <input type="text" class="form-control" id ="email" name ="email"placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
                   <div class="input-group-append">
                     <button class="btn btn-primary text-white" type="button" id="button-addon2">Subscribe</button>
                   </div>
                 </div>
               </div>
+              
 
+               
 
               <h2 class="footer-heading mb-4">Follow Us</h2>
                 <a href="#about-section" class="smoothscroll pl-0 pr-3"><span class="icon-facebook"></span></a>

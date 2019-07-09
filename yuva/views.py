@@ -18,4 +18,14 @@ def single(request):
 	c.save()
  
 	return render(request,'yuva/index.html')
-	'''
+
+
+'''
+
+def emailSubscribe(request):
+	print("hello")
+	email_s = request.POST['email']
+	s= Subscribe(email=email_s)
+	s.save()
+
+	return render(request, 'yuva/index.html')
