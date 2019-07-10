@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-
+from .models import Subscribe
+from .models import Client
 # Create your views here.
 def index(request):
 	return render(request, 'yuva/index.html')
@@ -8,7 +9,8 @@ def index(request):
 def single(request):
 	return render(request, 'yuva/single.html')
 
-'''def contactform(request):
+
+def contactform(request):
 	print("hello")
 	fstname = request.POST['yourname']
 	lstname = request.POST['lname']
@@ -20,7 +22,6 @@ def single(request):
 	return render(request,'yuva/index.html')
 
 
-'''
 
 def emailSubscribe(request):
 	print("hello")
